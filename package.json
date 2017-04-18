@@ -1,12 +1,12 @@
 {
-  "name": "react-starter",
+  "name": "privacy-protector",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify -t [ babelify ] src/index.jsx -o -v --extension=jsx | uglifyjs > build/app.js",
-    "watch": "watchify -t [ babelify ] src/index.jsx -o -v build/app.js",
+    "build": "browserify -t [ babelify ] src/index.jsx --extension=jsx -o | uglifyjs > build/app.js",
+    "watch": "watchify -t [ babelify ] src/index.jsx --extension=jsx -v -o  build/app.js",
     "lint": "eslint src/*.js*"
   },
   "author": "",
