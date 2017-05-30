@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify -t [ babelify ] [ envify --NODE_ENV production ] src/index.jsx --extension=jsx -o | uglifyjs > build/app.js",
+    "build": "browserify -t [ babelify ] -g [ envify --NODE_ENV production ] src/index.jsx --extension=jsx -o | uglifyjs > build/app.js",
     "watch": "watchify -t [ babelify ] src/index.jsx --extension=jsx -v -o  build/app.js",
     "lint": "eslint src/*.js*"
   },
